@@ -1,0 +1,12 @@
+<div class="card-container">
+    <div class="card" (click)="selection.value = 'component'" tabindex="0"
+    *ngFor="let card of weatherCards">
+        <p><span>{{card.summary}}</span> - Temperature:
+            <br/><span>{{card.temperatureF}} F</span>
+            <br/><span>{{card.temperatureC}} C</span>
+            
+            
+        </p>
+
+    </div>
+  </div>
